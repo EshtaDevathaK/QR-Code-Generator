@@ -1,0 +1,38 @@
+/* 📦 Sticky header bar */
+.top-container {
+  position: sticky;    /* 🔒 Sticks to top even when you scroll */
+  top: 0;              /* 🧲 Sticks at the top edge */
+  background-color: white;
+  z-index: 100;        /* ⬆️ Always on top */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 🌥️ Light shadow */
+}
+
+/* 🪟 Background track for progress bar */
+.scroll-progress-tracking-container {
+  width: 100%;         /* 🔁 Full width bar */
+  height: 8px;         /* 📏 Thin line */
+  background-color: #ddd; /* 🩶 Light gray */
+  margin-top: 10px;
+  border-radius: 4px;  /* 🟢 Soft corners */
+  overflow: hidden;
+}
+
+/* 🟩 Actual progress bar that fills */
+.current-progress-bar {
+  height: 100%;              /* ⬛ Full height of track */
+  background-color: #4caf50; /* ✅ Green bar */
+  width: 0%;                 /* 🟢 Grows with scrollPercentage */
+  transition: width 0.25s ease-out; /* 🌊 Smooth animation */
+}
+
+/* 📦 Product list wrapper */
+.data-container {
+  padding: 20px;
+}
+
+/* 🧾 Each product entry */
+.data-container p {
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* ➖ Line between items */
+}

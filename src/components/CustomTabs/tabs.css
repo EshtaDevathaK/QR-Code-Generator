@@ -1,0 +1,34 @@
+.wrapper {
+  padding: 8px;          /* 🧱 Outside spacing */
+}
+
+.heading {
+  display: flex;         /* 📍 Horizontal row of tabs */
+  justify-content: center;
+  margin-bottom: 12px;   /* 🔻Space below tabs */
+}
+
+.tab-item {
+  display: inline-flex;  /* 🔘 Tab buttons side-by-side */
+  font-size: 30px;       /* 🔠 Big text */
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 15px;    /* 📏 Room around text */
+  cursor: pointer;       /* 🖱️ Pointer when hover */
+  border: none;
+  color: #fff;           /* 🌈 White text */
+  background: #4e016a;   /* 💜 Purple tab bg */
+}
+
+.tab-item.active {
+  border-color: #000;    /* 🟫 Black border (if any) */
+  background: #a1d600;   /* 💚 Green active tab bg */
+  color: #fff;           /* 🔁 White text */
+}
+
+.content {
+  padding: 20px 10px;    /* 📦 Inner content spacing */
+  height: 300px;         /* 📏 Fixed height box */
+  overflow: auto;        /* 🔄 Scroll if too big */
+  background-color: #fff;/* ⬜ White background */
+}

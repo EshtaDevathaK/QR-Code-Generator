@@ -1,0 +1,111 @@
+/* 🎯 MAIN OUTER BOX — wraps the whole app layout */
+.github-profile-container {
+  margin: 0 auto;           /* 📍 Center it horizontally */
+  width: 90%;               /* 📏 Take most of screen */
+  max-width: 1000px;        /* 🧱 But don't stretch too wide */
+  padding: 20px;            /* 🧊 Some space inside the box */
+  border-radius: 8px;       /* 🟠 Rounded edges */
+}
+
+/* 📤 INPUT ZONE — text + button side-by-side */
+.input-wrapper {
+  display: flex;            /* 🧲 Keep children (input + button) in a row */
+  gap: 20px;                /* 🌬️ Space between them */
+  justify-content: center; /* 🎯 Center them horizontally */
+  margin-bottom: 20px;      /* 📏 Space below input box */
+}
+
+/* ✍️ SEARCH TEXT FIELD */
+.input-wrapper input {
+  padding: 12px;            /* 🧊 Inner spacing */
+  font-size: 16px;          /* 🔠 Text size */
+  border: none;             /* 🚫 No border */
+}
+
+/* 🖱️ SEARCH BUTTON STYLE */
+.input-wrapper button {
+  padding: 5px 12px;        /* 🧊 Top-bottom + side padding */
+  border: none;             /* 🚫 No border */
+  border-radius: 8px;       /* 🟠 Rounded edges */
+  background-color: #00f4ec;/* 🌊 Aqua blue background */
+  color: #000;              /* ⚫ Black text */
+  cursor: pointer;          /* 👉 Hand pointer on hover */
+}
+
+/* 👤 USER CARD — full profile section */
+.user {
+  padding: 15px;            /* 🧊 Inner space inside card */
+  border-radius: 10px;      /* 🟠 Rounded look */
+  border: 1px solid;        /* ⚫ Thin outline */
+}
+
+/* 🎯 PROFILE PIC STYLE */
+.avatar {
+  height: 150px;            /* 📏 Image size */
+  aspect-ratio: 1/1;        /* 🔲 Keep it perfectly square */
+  border-radius: 50%;       /* 🟠 Make it a circle */
+}
+
+/* 🧾 NAME + DATE SECTION */
+.name-container {
+  display: flex;            /* 🧲 Side-by-side layout */
+  gap: 20px;                /* 🌬️ Space between name and join date */
+  justify-content: center;  /* 🎯 Centered row */
+  margin-top: 20px;         /* 📏 Gap above name row */
+}
+
+/* 🖊️ NAME + DATE TEXT */
+.name-container p {
+  margin: 0px;              /* 🚫 Remove extra space */
+  font-size: 20px;          /* 🔠 Bigger text */
+  font-weight: bold;        /* 🧱 Bold text */
+}
+
+/* 📊 STAT CONTAINER — holds 3 profile facts */
+.profile-info div {
+  display: flex;            /* 🧲 Horizontal layout */
+  justify-content: center;  /* 🎯 Center each block */
+  gap: 20px;                /* 🌬️ Space between each box */
+  font-size: 20px;          /* 🔠 Big readable stats */
+  font-weight: bold;        /* 🧱 Bold numbers and labels */
+}
+
+/* 
+.github-profile-container 🟦
+┌─────────────────────────────────────────┐
+│  .input-wrapper 🟧                      │ ← Search bar zone
+│    ├── input 🟨  ← text field           │
+│    └── button 🟩 ← search button        │
+│                                         │
+│  .user 🟪                                │ ← Full profile card
+│    ├── .avatar 🎯 ← round image         │
+│    ├── .name-container 🧾               │
+│    │     ├── <a> GitHub name            │
+│    │     └── <p> Join date              │
+│    └── .profile-info 📊                 │
+│          ├── 📚 Public Repos            │
+│          ├── 👥 Followers               │
+│          └── 🤝 Following               │
+└─────────────────────────────────────────┘ */
+
+/* | Selector                    | Purpose in App UI                          |
+| --------------------------- | ------------------------------------------ |
+| `.github-profile-container` | Main outer shell of the app screen         |
+| `.input-wrapper`            | Holds the search bar + button in a row     |
+| `input` & `button`          | Control user input and trigger API fetch   |
+| `.user`                     | The profile card block                     |
+| `.avatar`                   | The round GitHub profile picture           |
+| `.name-container`           | Row with GitHub name + Join Date           |
+| `.profile-info` 
+
+
+
+| React Part                                   | Styled by CSS Selector              |
+| -------------------------------------------- | ----------------------------------- |
+| `<div className="github-profile-container">` | `.github-profile-container`         |
+| `<div className="input-wrapper">`            | `.input-wrapper`, `input`, `button` |
+| `<div className="user">`                     | `.user`                             |
+| `<img className="avatar" />`                 | `.avatar`                           |
+| `<div className="name-container">`           | `.name-container`, `p`              |
+| `<div className="profile-info">`             | `.profile-info div`                 |
+*/

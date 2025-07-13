@@ -1,0 +1,21 @@
+/* 🎯 Big wrapper box for the whole game board */
+.tic-tac-toe-container {
+  display: flex;              /* stack rows vertically */
+  flex-direction: column;
+  align-items: center;        /* center everything horizontally */
+  margin-top: 100px;          /* spacing from top of page */
+}
+
+/* ⬜ Every square (button) in the grid */
+.square {
+  border: 1px solid red;      /* make each box visible */
+  float: left;                /* align squares side by side */
+  font-size: 40px;            /* make the X and O big */
+  height: 100px;
+  width: 100px;
+  padding: 0px;
+  text-align: center;         /* center the X/O inside */
+  margin-right: -1px;         /* remove extra gaps between boxes */
+  margin-top: -1px;
+  cursor: pointer;            /* show hand when hovering */
+}
