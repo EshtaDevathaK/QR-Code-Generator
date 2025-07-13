@@ -17,16 +17,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // export default App;
 
 
-import QRCodeGenerator from "./components/qr-code-generator";
+import Display from "./components/qr-code-generator/Display.jsx";
 
 function App() {
   return (
-   
-      <div>
-        <h1>Welcome to My App</h1>
-        <QRCodeGenerator />
-      </div>
-   
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<QRCodeGenerator />} />
+        <Route path="/display" element={<Display />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
