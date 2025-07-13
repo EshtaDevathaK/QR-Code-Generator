@@ -17,7 +17,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // export default App;
 
 
-import QRCodeGenerator from "./components/qr-code-generator/index.jsx";
+import QRCodeGenerator from "./components/qr-code-generator";
 import Display from "./components/qr-code-generator/Display.jsx";
 function App() {
   return (

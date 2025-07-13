@@ -67,3 +67,11 @@ export default function QRCodeGenerator() {
 // | **Logic-focused** | `// 🌐 BUILD THE FULL URL`             | Connects intention to code         |
 // | **UX-focused**    | `// 🧹 RESET THE INPUT FIELD`          | Makes you think about experience   |
 // | **Flow markers**  | `// 🔘 ACTION BUTTON`                  | Shows what triggers what           |
+
+
+
+// ⚠️ WARNING: Don't import index.jsx directly, use the folder path!
+// import QRCodeGenerator from "./components/qr-code-generator/index.jsx";  // ❌ Will cause issues sometimes in builds
+
+// ✅ Correct import: 
+// import QRCodeGenerator from "./components/qr-code-generator";
